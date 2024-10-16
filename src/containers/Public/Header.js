@@ -13,6 +13,7 @@ import { useSelector, useDispatch } from "react-redux";
 import * as actions from "../../store/actions";
 import menuManage from "../../ultils/menuManage";
 import menuAdmin from "../../ultils/menuAdmin";
+import Ad from "./Ad";
 
 const { AiOutlinePlusCircle, AiOutlineLogout, BsChevronDown } = icons;
 
@@ -45,7 +46,7 @@ const Header = () => {
         <div className="flex items-center gap-1">
           {!isLoggedIn && (
             <div className="flex items-center gap-1">
-              <small>Phongtro123.com xin chào !</small>
+              <small>Timtro xin chào !</small>
               <Button
                 text={"Đăng nhập"}
                 textColor="text-white"

@@ -147,7 +147,7 @@ const ManagePost = () => {
           Sau khi xác nhận gia hạn, vui lòng chủ trọ hãy bank tiền gia hạn theo{" "}
           <a
             className="text-blue-500 hover:underline"
-            href="http://zalo.me/0862434001"
+            href="https://zalo.me/0971625495"
           >
             tài khoản này
           </a>{" "}
