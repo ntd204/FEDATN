@@ -1,0 +1,62 @@
+import React from "react";
+import GoogleMapReact from "google-map-react";
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+export const Map = () => {
+  const defaultProps = {
+    center: {
+      lat: 20.99,
+      lng: 105.77,
+    },
+    zoom: 11,
+  };
+
+  return (
+    <div style={{ height: "300px", width: "100%", border: "20px" }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "AIzaSyCSeYQYg5k7fVzBA4L_X9rmyGMpB-pKhlc" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        <AnyReactComponent lat={20.99} lng={105.77} text="📍" />
+      </GoogleMapReact>
+    </div>
+  );
+};
+
+
+LỖI
+// export const Map = ({ address = "", zoom = 12 }) => {
+//   //   const [center, setCenter] = useState([]);
+//   //   useEffect(() => {
+//   //     const fetchCenter = async () => {
+//   //       const response = await apiGetLongtitudeAndLatitudeFromAddress(address);
+//   //       if (response.status === 200 && response.data.features.length > 0)
+//   //         setCenter([
+//   //           response.data.features[0].geometry.coordinates[1],
+//   //           response.data.features[0].geometry.coordinates[0],
+//   //         ]);
+//   //       else {
+//   //         window.navigator.geolocation.getCurrentPosition((position) => {
+//   //           setCenter(position.coords.latitude, position.coords.longitude);
+//   //         });
+//   //       }
+//   //     };
+//   //     fetchCenter();
+//   //   }, [address]);
+//   //   console.log(center);
+//   return (
+//     <div className="w-full h-[300px]">
+//       {/* <MapContainer center={center} zoom={zoom} className="w-full h-full">
+//         <TileLayer url={url} attribution={attribution}>
+//           <Marker position={center}>
+//             <Popup>{address}</Popup>
+//           </Marker>
+//         </TileLayer>
+//       </MapContainer> */}
+//       Map
+//     </div>
+//   );
+// };
+export default Map;
