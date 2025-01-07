@@ -11,6 +11,8 @@
     "axios": "^0.27.2",
     "buffer": "^6.0.3",
     "chart.js": "^4.2.1",
+    "cross-env": "^7.0.3",
+    "geocode": "^0.0.3",
     "google-map-react": "^2.2.1",
     "leaflet": "^1.9.4",
     "moment": "^2.29.4",

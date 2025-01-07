@@ -25,7 +25,7 @@ export const text = {
   price: "Chi phí thấp, hiệu quả tối đa",
   comment:
     '"Trước khi biết website TimTro, mình phải tốn nhiều công sức và chi phí cho việc đăng tin cho thuê: từ việc phát tờ rơi, dán giấy, và đăng lên các website khác nhưng hiệu quả không cao. Từ khi biết website TimTro.com, mình đã thử đăng tin lên và đánh giá hiệu quả khá cao trong khi chi phí khá thấp, không còn tình trạng phòng trống kéo dài."',
-  author: "Anh Khánh (chủ hệ thống phòng trọ tại Tp.HCM)",
+  author: "Anh Đạo (chủ hệ thống phòng trọ tại Hà Nội)",
   question: "Bạn đang có phòng trọ / căn hộ cho thuê?",
   answer: "Không phải lo tìm người cho thuê, phòng trống kéo dài",
 };

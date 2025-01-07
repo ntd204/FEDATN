@@ -9,7 +9,6 @@ import Ad from "./Ad";
 const Home = () => {
   const location = useLocation();
   const navRef = useRef();
-
   useEffect(() => {
     const handleScroll = (e) => {
       if (window.pageYOffset >= 134) {
@@ -37,6 +36,10 @@ const Home = () => {
       <div ref={navRef} className="w-full">
         <Navigation />
       </div>
+      {location.pathname !== "/login" && location.pathname !== "/register" && (
+        <Ad />
+      )}
+
       {location.pathname !== `/${path.CONTACT}` &&
         location.pathname !== `/${path.LOGIN}` &&
         !location.pathname?.includes(path.DETAIL) &&

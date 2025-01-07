@@ -4,7 +4,6 @@ import menuSidebar from "../../ultils/menuSidebar";
 import { NavLink } from "react-router-dom";
 import * as actions from "../../store/actions";
 import { AiOutlineLogout } from "react-icons/ai";
-import Ad from "../Public/Ad";
 
 const activeStyle =
   "hover:bg-gray-200 flex  rounded-md items-center gap-2 py-2 font-bold bg-gray-200";

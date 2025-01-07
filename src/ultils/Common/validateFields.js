@@ -1,6 +1,9 @@
 const validate = (payload, setInvalidFields) => {
   let invalids = 0;
   let fields = Object.entries(payload);
+  console.log("fields", fields);
+  console.log("payload", payload);
+
   fields.forEach((item) => {
     if (item[1] === "" || !item[1]) {
       setInvalidFields((prev) => [

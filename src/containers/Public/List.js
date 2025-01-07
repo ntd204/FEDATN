@@ -11,6 +11,7 @@ const List = ({ categoryCode }) => {
   const { currentData } = useSelector((state) => state.user);
   const [sort, setSort] = useState(0);
   const [update, setUpdate] = useState(false);
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
   useEffect(() => {
     let params = [];
@@ -31,11 +32,22 @@ const List = ({ categoryCode }) => {
     dispatch(getPostsLimit(searchParamsObject));
   }, [searchParams, categoryCode, sort, update]);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000); // Cập nhật thời gian mỗi giây
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="w-full p-2 bg-white shadow-md rounded-md px-6">
       <div className="flex items-center justify-between my-3">
         <h4 className="text-xl font-semibold">Danh sách tin đăng</h4>
-        <span>Cập nhật: 8:04 10/05/2024</span>
+        <span>
+          Cập nhật: {currentDateTime.toLocaleTimeString()}{" "}
+          {currentDateTime.toLocaleDateString()}
+        </span>
       </div>
       <div className="flex items-center gap-2 my-2">
         <span>Sắp xếp:</span>

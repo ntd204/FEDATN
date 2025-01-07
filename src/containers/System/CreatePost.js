@@ -115,6 +115,7 @@ const CreatePost = ({ isEdit }) => {
     );
     let priceCode = priceCodeArr[0]?.code;
     let areaCodeArr = getCodesArea(+payload.areaNumber, areas, 0, 90);
+    console.log(areaCodeArr);
     let areaCode = areaCodeArr[0]?.code;
 
     let finalPayload = {
@@ -129,6 +130,7 @@ const CreatePost = ({ isEdit }) => {
       } ${payload?.address?.split(",")[0]}`,
     };
     const result = validate(finalPayload, setInvalidFields);
+    console.log(result);
     if (result === 0) {
       if (dataEdit && isEdit) {
         finalPayload.postId = dataEdit?.id;

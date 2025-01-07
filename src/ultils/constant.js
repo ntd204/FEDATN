@@ -56,6 +56,101 @@ export const location = [
   },
 ];
 
+// const getLocationInfo = (path) => {
+//   switch (path) {
+//     case "cho-thue-can-ho":
+//       return (
+//         {
+//           id: "hcm",
+//           name: "Phòng trọ Hồ Chí Minh",
+//           image: "https://phongtro123.com/images/location_hcm.jpg",
+//           provinceCode: "CUID",
+//         },
+//         {
+//           name: "Phòng trọ Hà Nội",
+//           image: "https://phongtro123.com/images/location_hn.jpg",
+//           id: "hn",
+//           provinceCode: "NDOE",
+//         },
+//         {
+//           name: "Phòng trọ Đà nẵng",
+//           image: "https://phongtro123.com/images/location_dn.jpg",
+//           id: "dn",
+//           provinceCode: "NNNE",
+//         }
+//       );
+//     case "cho-thue-mat-bang":
+//       return (
+//         {
+//           id: "hcm",
+//           name: "Cho thuê mặt bằng Hồ Chí Minh",
+//           image: "https://phongtro123.com/images/location_hcm.jpg",
+//           provinceCode: "CUID",
+//         },
+//         {
+//           name: "Cho thuê mặt bằng Hà Nội",
+//           image: "https://phongtro123.com/images/location_hn.jpg",
+//           id: "hn",
+//           provinceCode: "NDOE",
+//         },
+//         {
+//           name: "Cho thuê mặt bằng Đà nẵng",
+//           image: "https://phongtro123.com/images/location_dn.jpg",
+//           id: "dn",
+//           provinceCode: "NNNE",
+//         }
+//       );
+//     case "nha-cho-thue":
+//       return (
+//         {
+//           id: "hcm",
+//           name: "Nhà cho thuê Hồ Chí Minh",
+//           image: "https://phongtro123.com/images/location_hcm.jpg",
+//           provinceCode: "CUID",
+//         },
+//         {
+//           name: "Nhà cho thuê Hà Nội",
+//           image: "https://phongtro123.com/images/location_hn.jpg",
+//           id: "hn",
+//           provinceCode: "NDOE",
+//         },
+//         {
+//           name: "Nhà cho thuê Đà nẵng",
+//           image: "https://phongtro123.com/images/location_dn.jpg",
+//           id: "dn",
+//           provinceCode: "NNNE",
+//         }
+//       );
+//     case "cho-thue-phong-tro":
+//       return (
+//         {
+//           id: "hcm",
+//           name: "Cho thuê phòng trọ Hồ Chí Minh",
+//           image: "https://phongtro123.com/images/location_hcm.jpg",
+//           provinceCode: "CUID",
+//         },
+//         {
+//           name: "Cho thuê phòng trọ Hà Nội",
+//           image: "https://phongtro123.com/images/location_hn.jpg",
+//           id: "hn",
+//           provinceCode: "NDOE",
+//         },
+//         {
+//           name: "Cho thuê phòng trọ Đà nẵng",
+//           image: "https://phongtro123.com/images/location_dn.jpg",
+//           id: "dn",
+//           provinceCode: "NNNE",
+//         }
+//       );
+//     default:
+//       return {
+//         name: "Không tìm thấy vị trí",
+//         image: "",
+//         provinceCode: "",
+//       };
+//   }
+// };
+
 export const underMap = [
   'Bạn đang xem nội dung tin đăng: "',
   '". Mọi thông tin liên quan đến tin đăng này chỉ mang tính chất tham khảo. Nếu bạn có phản hồi với tin đăng này (báo xấu, tin đã cho thuê, không liên lạc được,...), vui lòng thông báo để PhòngTrọ123 có thể xử lý.',

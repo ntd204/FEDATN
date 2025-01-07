@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import anonAvatar from "../assets/avatar_non.jpg";
+import anonAvatar from "../assets/anon-avatar.png";
 import icons from "../ultils/icons";
 
 const { BsDot, BsTelephoneFill, SiZalo } = icons;
